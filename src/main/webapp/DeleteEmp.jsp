@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1"%>
 
 <!DOCTYPE html>
 <html>
@@ -21,41 +21,45 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    background:linear-gradient(135deg,#11998e,#38ef7d);
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
 }
 
-.card{
+.container{
     width:500px;
-    background:#fff;
+    background:white;
     padding:40px;
     border-radius:15px;
     text-align:center;
-    box-shadow:0 15px 35px rgba(0,0,0,.3);
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
 }
 
 h1{
-    color:#28a745;
-    margin-bottom:20px;
+    color:#1565c0;
+    margin-bottom:25px;
 }
 
 .message{
     font-size:20px;
-    color:#444;
-    margin:25px 0;
     font-weight:bold;
+    color:#333;
+    margin-bottom:30px;
+    padding:15px;
+    background:#f5f5f5;
+    border-left:5px solid #1565c0;
+    border-radius:5px;
 }
 
 a{
     display:block;
     width:100%;
-    padding:14px;
-    margin:15px 0;
+    margin:12px 0;
+    padding:13px;
     text-decoration:none;
     background:#1565c0;
     color:white;
-    border-radius:8px;
+    border-radius:6px;
+    font-size:16px;
     transition:.3s;
-    font-size:17px;
 }
 
 a:hover{
@@ -64,7 +68,7 @@ a:hover{
 
 .footer{
     margin-top:20px;
-    color:#888;
+    color:gray;
     font-size:14px;
 }
 
@@ -74,9 +78,9 @@ a:hover{
 
 <body>
 
-<div class="card">
+<div class="container">
 
-<h1>Employee</h1>
+<h1>Employee Management System</h1>
 
 <div class="message">
 
@@ -90,14 +94,14 @@ if(data!=null){
 
 </div>
 
-<a href="emp.html">Add Another Employee</a>
+<a href="emp.html">Add Employee</a>
 
 <a href="View">View Employee Records</a>
 
 <a href="index.html">Home</a>
 
 <div class="footer">
-Employee Management System
+Servlet & JSP CRUD Project
 </div>
 
 </div>
